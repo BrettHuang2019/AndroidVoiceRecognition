@@ -77,7 +77,7 @@ public class Bridge {
 
         @Override
         public void onRmsChanged(float rmsdB) {
-//            UnityPlayer.UnitySendMessage(unityGameObjectName, "onMessage", "onRmsChanged:"+rmsdB);
+            UnityPlayer.UnitySendMessage(unityGameObjectName, "onRmsChanged", String.valueOf(rmsdB));
         }
 
         @Override
